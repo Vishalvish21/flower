@@ -7,7 +7,7 @@ import numpy as np
 st.title("Flower Classification App")
 
 file_name = "lr_model.pkl"
-with open(path.join("model",file_name) , 'rb') as f:
+with open(path.join(file_name) , 'rb') as f:
     lr_model = pickle.load(f)
 
 sl = st.number_input("Insert a sepal length")
